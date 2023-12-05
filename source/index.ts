@@ -2,7 +2,7 @@
 export default function wait(milliseconds: number) {
 	if (milliseconds > 0 && milliseconds < 100) {
 		console.warn(
-			'`@bevry/wait` accepts milliseconds, you may have attempted to send it seconds'
+			'`@bevry/wait` accepts milliseconds, you may have attempted to send it seconds',
 		)
 	}
 	return new Promise(function (resolve, reject) {
